@@ -78,6 +78,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_PGN_FF34_ClutchCom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PGN_FF34_ClutchCom.Designer.cs">
+      <DependentUpon>UC_PGN_FF34_ClutchCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PGN_FF50_Helm_TakeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PGN_FF50_Helm_TakeCtrl.Designer.cs">
+      <DependentUpon>UC_PGN_FF50_Helm_TakeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PGN_FF51_LeverPos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PGN_FF51_LeverPos.Designer.cs">
+      <DependentUpon>UC_PGN_FF51_LeverPos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -87,6 +108,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_PGN_FF34_ClutchCom.resx">
+      <DependentUpon>UC_PGN_FF34_ClutchCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PGN_FF50_Helm_TakeCtrl.resx">
+      <DependentUpon>UC_PGN_FF50_Helm_TakeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PGN_FF51_LeverPos.resx">
+      <DependentUpon>UC_PGN_FF51_LeverPos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

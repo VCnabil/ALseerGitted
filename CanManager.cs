@@ -163,6 +163,60 @@ namespace AlSeerGui
 
         }
 
+        public string ReceiveMessageVALSEER(bool arg_in_HexFormat)
+        {
+            string meg = ".";
+            Canlib.canStatus status;
+            byte[] data = new byte[8];
+            int id;
+            int dlc;
+            int flags;
+            long timestamp;
+            bool finished = false;
+
+           
+
+
+            status = Canlib.canReadWait(handle, out id, data, out dlc, out flags, out timestamp, 100);
+
+            if (status == Canlib.canStatus.canOK)
+            {
+                string str_Hex_ID="";
+               if (arg_in_HexFormat)
+                {
+                    str_Hex_ID = id.ToString("X8");
+                }
+                else
+                {
+                    str_Hex_ID = id.ToString("D9");
+                }
+
+                string str_space_ceparated_data = " ";
+
+                for (int x = 0; x < data.Length; x++) {
+                    if (arg_in_HexFormat)
+                    {
+                     str_space_ceparated_data += data[x].ToString("X2") + " ";
+                        
+                    }
+                    else
+                    {
+                        str_space_ceparated_data += data[x].ToString("D3") + " ";
+                    }
+                }
+
+                meg = str_Hex_ID + str_space_ceparated_data;
+            }
+            else if (status != Canlib.canStatus.canERR_NOMSG)
+            {
+                CheckStatus(status, "canReadWait");
+                meg = "ERROR"; // Exit the loop if an error occurs
+            }
+
+            return meg;
+
+        }
+
 
         public byte[] ReceiveMessageSpecificForAxioTest()
         {
