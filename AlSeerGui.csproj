@@ -78,6 +78,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_8byteDataDisplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_8byteDataDisplayer.Designer.cs">
+      <DependentUpon>UC_8byteDataDisplayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PGN_FF31_mainClutch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PGN_FF31_mainClutch.Designer.cs">
+      <DependentUpon>UC_PGN_FF31_mainClutch.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_PGN_FF34_ClutchCom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +120,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_8byteDataDisplayer.resx">
+      <DependentUpon>UC_8byteDataDisplayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PGN_FF31_mainClutch.resx">
+      <DependentUpon>UC_PGN_FF31_mainClutch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_PGN_FF34_ClutchCom.resx">
       <DependentUpon>UC_PGN_FF34_ClutchCom.cs</DependentUpon>
     </EmbeddedResource>

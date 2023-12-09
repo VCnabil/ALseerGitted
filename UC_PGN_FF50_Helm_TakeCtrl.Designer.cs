@@ -39,9 +39,11 @@
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(0, 69);
+            this.trackBar1.Maximum = 1000;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(200, 101);
+            this.trackBar1.Size = new System.Drawing.Size(433, 101);
             this.trackBar1.TabIndex = 0;
+            this.trackBar1.TickFrequency = 100;
             // 
             // label1
             // 
@@ -91,7 +93,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trackBar1);
             this.Name = "UC_PGN_FF50_Helm_TakeCtrl";
-            this.Size = new System.Drawing.Size(200, 400);
+            this.Size = new System.Drawing.Size(494, 400);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

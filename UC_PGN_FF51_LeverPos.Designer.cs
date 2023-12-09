@@ -42,7 +42,7 @@
             this.trackBar1.Location = new System.Drawing.Point(61, 46);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(101, 169);
+            this.trackBar1.Size = new System.Drawing.Size(101, 373);
             this.trackBar1.TabIndex = 0;
             // 
             // label1
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 253);
+            this.label2.Location = new System.Drawing.Point(46, 450);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 29);
             this.label2.TabIndex = 2;
@@ -66,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(222, 253);
+            this.label3.Location = new System.Drawing.Point(212, 450);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 29);
             this.label3.TabIndex = 4;
@@ -77,7 +77,7 @@
             this.trackBar2.Location = new System.Drawing.Point(217, 46);
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar2.Size = new System.Drawing.Size(101, 169);
+            this.trackBar2.Size = new System.Drawing.Size(101, 373);
             this.trackBar2.TabIndex = 3;
             // 
             // UC_PGN_FF51_LeverPos
@@ -90,7 +90,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trackBar1);
             this.Name = "UC_PGN_FF51_LeverPos";
-            this.Size = new System.Drawing.Size(400, 400);
+            this.Size = new System.Drawing.Size(423, 541);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);

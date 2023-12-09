@@ -76,6 +76,11 @@ namespace AlSeerGui
             cb_Send_ff34.CheckedChanged += new EventHandler(cb_Send_ff34_CheckedChanged);
             cb_Send_ff50.CheckedChanged += new EventHandler(cb_Send_ff50_CheckedChanged);
             cb_Send_ff51.CheckedChanged += new EventHandler(cb_Send_ff51_CheckedChanged);
+
+            uC_8_FF34.SetTitle("FF34");
+            uC_8_FF50.SetTitle("FF50");
+            uC_8_FF51.SetTitle("FF51");
+
         }
 
         #region StartStopDispReceive
@@ -266,18 +271,21 @@ namespace AlSeerGui
         }
 
         void Process_FF34() {
-            canManager.SendMessage(uC_PGN_FF34_Clu.GET_PGN(), uC_PGN_FF34_Clu.GET_Data());
-            CreateMessageAndLogIt(uC_PGN_FF34_Clu.GET_PGN(), uC_PGN_FF34_Clu.GET_Data());
+            //canManager.SendMessage(uC_PGN_FF34_Clu.GET_PGN(), uC_PGN_FF34_Clu.GET_Data());
+            //CreateMessageAndLogIt(uC_PGN_FF34_Clu.GET_PGN(), uC_PGN_FF34_Clu.GET_Data());
+            //uC_8_FF34.UpdateData(uC_PGN_FF34_Clu.GET_Data());
         }
         void Process_FF50()
         {
-            canManager.SendMessage(uC_PGN_FF50_hlm.GET_PGN(), uC_PGN_FF50_hlm.GET_Data());
-            CreateMessageAndLogIt(uC_PGN_FF50_hlm.GET_PGN(), uC_PGN_FF50_hlm.GET_Data());
+            //canManager.SendMessage(uC_PGN_FF50_hlm.GET_PGN(), uC_PGN_FF50_hlm.GET_Data());
+            //CreateMessageAndLogIt(uC_PGN_FF50_hlm.GET_PGN(), uC_PGN_FF50_hlm.GET_Data());
+            //uC_8_FF50.UpdateData(uC_PGN_FF50_hlm.GET_Data());
         }
         void Process_FF51()
         {
-            canManager.SendMessage(uC_PGN_FF51_Lev.GET_PGN(), uC_PGN_FF51_Lev.GET_Data());
-            CreateMessageAndLogIt(uC_PGN_FF51_Lev.GET_PGN(), uC_PGN_FF51_Lev.GET_Data());
+            //canManager.SendMessage(uC_PGN_FF51_Lev.GET_PGN(), uC_PGN_FF51_Lev.GET_Data());
+            //CreateMessageAndLogIt(uC_PGN_FF51_Lev.GET_PGN(), uC_PGN_FF51_Lev.GET_Data());
+            //uC_8_FF51.UpdateData(uC_PGN_FF51_Lev.GET_Data());
         }
         string CreateMessageAndLogIt(int pgn, byte[] data)
         {
